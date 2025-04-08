@@ -1,29 +1,33 @@
 @import url(./global.css);
 
 .principal {
-    background-image: url("img/Background.png");
+    background-image: url(../img/Background.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
 }
 
-.container {
-    height: 100vh;
+.container{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 33% 33% 33%;
+    height: 100vh;
 }
 
 .container__botao {
+    display: block;
+    color: var(--branco-principal);
     background-color: var(--botao-azul);
     border-radius: 5px;
-    padding: 1em;
-    color: var(--branco-principal);
-    display: block;
+    padding: 1rem;
     text-decoration: none;
+    margin-bottom: 1em;
 }
 
 .botao_secundario {
     background-color: transparent;
-    border: 2px solid var(--branco-principal)
+    border: 2px solid var(--branco-principal);
+
 }
 
 .container__aviso {
@@ -32,6 +36,14 @@
 }
 
 .container__titulo {
-    font-size: 28px;
+    font-size: 38px;
     font-weight: 700;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container__caixa {
+    margin: 0 6em;
 }
